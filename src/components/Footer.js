@@ -16,7 +16,9 @@ const Footer = () => {
       <SectionHeader title="Contact" />
       <div className="getintouch">
         <h1 className="getintouch-text">Get In Touch</h1>
-        <button className="downloadCv">Download CV +</button>
+        <a href="./maricabogdan.pdf" download>
+          <button className="downloadCv">Download CV +</button>
+        </a>
         <div className="linksContact">
           <a href="https://facebook.com/maricabogdann">
             <FaFacebook />
