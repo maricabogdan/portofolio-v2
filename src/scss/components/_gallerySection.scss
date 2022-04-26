@@ -1,0 +1,153 @@
+.gallery-wrap {
+    position: relative;
+    background-color: $background2;
+    margin-left: -5vw;
+    margin-right: -5vw;
+
+    @media only screen and (max-width: 600px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+
+
+  
+  }
+  
+  .gallery-counter {
+    position: absolute;
+    bottom: 5%;
+    left: 100px;
+    z-index: 1;
+    mix-blend-mode: difference;
+    line-height: 16px;
+    color: #dbd8d6;
+  
+    font-weight: 600;
+  
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+  
+    .divider {
+      content: "";
+      background-color: white;
+      width: 6.25vw;
+      margin: 7px 10px;
+      height: 1px;
+      display: inline-block;
+    }
+  }
+  
+  .gallery {
+
+    height: 95vh;
+  
+    padding: 20vh 0;
+    width: 600%;
+    display: flex;
+    flex-wrap: nowrap;
+
+    
+    
+
+    .section-header-gallery {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+    }
+  
+    .gallery-item {
+      // margin-top: 30px;
+      width: 100%;
+      height: 100%;
+      position: relative;
+      will-change: transform;
+    }
+  
+    .gallery-item-info {
+      position: absolute;
+      bottom: 20%;
+      z-index: 1;
+      transform: translateX(-120%);
+      // color: #dbd8d6;
+      color: $background;
+   
+      mix-blend-mode: difference;
+      // opacity: 0.8;
+    
+
+      .gallery-info-title {
+        line-height: 6vw;
+        font-family: "Bai Jamjuree";
+        font-weight: 600;
+   
+        font-size: 4vw;
+        -webkit-font-smoothing: antialiased;
+        // -webkit-text-stroke: 5px $background;
+      }
+  
+      .gallery-info-subtitle {
+        position: relative;
+        line-height: 6vw;
+        color: transparent;
+        font-family: "Bodoni Moda";
+        font-weight: 400;
+        font-size: 4vw;
+        // color: white;
+        color: $background;
+  
+      }
+  
+      .gallery-info-category {
+        position: relative;
+        line-height: 24px;
+        // font-family: "Bai Jamjuree";
+        font-weight: 400;
+        font-size: 24px;
+        -webkit-font-smoothing: antialiased;
+        margin-top: 2vh;
+      }
+
+      .gallery-info-description {
+        position: relative;
+        line-height: 24px;
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+
+      .gallery-info-links {
+        position: relative;
+        font-size: 42px;
+        color: white;
+        mix-blend-mode: difference;
+        margin-left: 10px;
+      }
+    }
+    .gallery-item-wrapper {
+      aspect-ratio: 16/9;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 20vw 1fr 20vw;
+      width: 100vw;
+  
+      &.is-reveal {
+        .gallery-item-image {
+          transform: scale(1);
+          filter: none;
+        }
+      }
+    }
+    .gallery-item-image {
+      background-size:cover;
+      background-position: center;
+      transform-origin: center;
+      width: 100%;
+      height: 100%;
+      will-change: transform;
+      transform: scale(0.7);
+      transition: all 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+      filter: grayscale(100%) sepia(20%) brightness(80%);
+    }
+  }
+

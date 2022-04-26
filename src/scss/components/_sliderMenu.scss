@@ -1,0 +1,113 @@
+.slider-menu {
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    height: 30vh;
+    top: 10vh;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    color: $background2;
+
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+    text-transform: lowercase;
+
+
+
+
+    .slider-wrapper {
+        width: 80%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+
+        nav {
+
+        align-self: center;
+
+
+            ul {
+
+                li{ 
+                    font-size: 3vh;
+                    margin: 1vw 0;
+                    font-weight: 600;
+                    cursor: pointer;
+                    position: relative;
+
+                  
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 4px;
+                        border-radius: 4px;
+                        background-color: #18272F;
+                        bottom: -2px;
+                        left: 0;
+                        transform-origin: right;
+                        transform: scaleX(0);
+                        transition: transform .3s ease-in-out;
+                      
+                    }
+
+                    &:hover::before {
+                        transform-origin: left;
+                        transform: scaleX(1);
+                      }
+                }
+            }
+        }
+
+        .close-menu {
+            position: absolute;
+            top: 7vh;
+            right: 3vw;
+            font-size: 1.5vw;
+            cursor: pointer;
+        }
+
+        .contact-links {
+            // background-color: red;
+            margin: 1.5vw 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+            a {
+                font-size: 2.5vw;
+                color: white;
+
+                &:first-child:hover {
+                    color: #4267B2;
+                }
+
+                &:nth-child(2):hover {
+                    color: #333;
+                }
+                &:nth-child(3):hover {
+                    color: #0e76a8;
+                }
+                &:nth-child(4):hover {
+                    color: #8B786D;
+                }
+            
+            }
+        }
+
+    }
+}
+
+.menu.active {
+    opacity: 1;
+    visibility: visible;
+}

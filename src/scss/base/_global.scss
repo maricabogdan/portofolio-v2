@@ -1,0 +1,39 @@
+body {
+  background: $background;
+}
+
+
+section {
+  padding: 0 100px;
+}
+
+.loader-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #191919;
+  color: #dbd8db;
+
+
+
+  h1 {
+    font-size: 3rem;
+    text-transform: 1.5vw;
+    font-weight: 800;
+    
+    
+  }
+}
+
+.absolute {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $background2;
+  z-index: 1;
+}
+
+

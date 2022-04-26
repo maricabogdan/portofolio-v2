@@ -1,0 +1,28 @@
+.about-section {
+    margin-top: 50px;
+    position: relative;
+    p {
+        font-size: 60px;
+        line-height: 1.12;
+        opacity: 0;
+        position: relative;
+        margin-top: 50px;
+
+        @media only screen and (max-width: 786px) {
+            & {
+              font-size: 32px;
+
+
+            }
+          }
+
+        >div{
+            opacity: 0;
+            transform: translate(0);
+        }
+
+        &.is-reveal {
+            opacity: 1;
+        }
+    }
+}

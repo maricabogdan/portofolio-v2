@@ -1,0 +1,16 @@
+@import 'base/reset';
+@import 'base/colors';
+@import 'base/global';
+@import 'base/typography';
+
+//  Import Components
+
+
+@import './components/sliderMenu';
+@import './components/header';
+@import './components/sectionHeader';
+@import './components/mainSection';
+@import './components/featuredSection';
+@import './components/aboutSection';
+@import './components/gallerySection';
+@import './components/footer'

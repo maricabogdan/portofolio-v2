@@ -1,0 +1,81 @@
+.mainSection {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @media only screen and (max-width: 786px) {
+    & {
+      height: 95vh;
+      
+    }
+  }
+
+
+
+  h1 {
+    position: relative;
+    font-size: 13vw;
+    font-weight: 500;
+    color: $background2;
+
+    @media only screen and (max-width: 786px) {
+      & {
+        font-size: 10vw;
+      }
+    }
+  }
+  
+  h2 {
+    font-size: 13vw;
+    font-weight: 500;
+    margin-bottom: 3vh;
+    color: $background2;
+
+    @media only screen and (max-width: 786px) {
+      & {
+        font-size: 10vw;
+      }
+    }
+  }
+  
+
+  .contact-main {
+    position: absolute;
+    bottom: 7vh;
+    right: 0vw;
+    padding: 1vw 1vw;
+    background-color: $background2;
+    color: $background;
+    text-transform: uppercase;
+    border: 2px solid $background2;
+    font-size: 1.5vw;
+    font-family: 'Poppins';
+    transition: .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: inherit;
+
+    @media only screen and (max-width: 786px) {
+      & {
+        bottom: 15vh;
+        left: 0vw;
+        right: auto;
+        padding: 4vw 4vw;
+        font-size: 3.5vw;
+      }
+    }
+
+  
+
+    &:hover {
+      background-color: transparent;
+      color: $background2;
+    }
+  }
+
+}
+
+.lineChildren {
+  transform: translate(0, 500px);
+}
