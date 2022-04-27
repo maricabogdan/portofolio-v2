@@ -21,7 +21,7 @@ const images = [
     subtitle: 'Design',
     description: 'Simple and clean design',
     link: 'https://olliedesign.netlify.app',
-    codeGit: 'http://olliedesign.netlify.app',
+    codeGit: 'https://github.com/maricabogdan/ollie-design',
   },
   {
     src: PlanetEarth,
@@ -29,14 +29,14 @@ const images = [
     subtitle: '3D Earth',
     description: 'Experience with 3D',
     link: 'https://earth-mb.netlify.app/',
-    codeGit: 'https://earth-mb.netlify.app/',
+    codeGit: 'https://github.com/maricabogdan/earth-planet',
   },
   {
     src: Mboogle,
     title: 'Mboogle',
     subtitle: 'Google 2.0',
     description: 'Get familiar with API',
-    link: 'https://mboogle.netlify.app/search',
+    link: 'https://mboogle.netlify.app',
     codeGit: 'https://github.com/maricabogdan/mboogle',
   },
   {
@@ -160,7 +160,11 @@ export default function Gallery({ src, index, columnOffset }) {
   };
 
   return (
-    <section data-scroll-section className="section-wrapper gallery-wrap">
+    <section
+      data-scroll-section
+      className="section-wrapper gallery-wrap"
+      id="gallery"
+    >
       <div className="gallery" ref={ref}>
         <SectionHeader title="Gallery" />
         <div className="gallery-counter">

@@ -12,7 +12,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <section className="footer" data-scroll-section>
+    <section className="footer" data-scroll-section id="footer">
       <SectionHeader title="Contact" />
       <div className="getintouch">
         <h1 className="getintouch-text">Get In Touch</h1>

@@ -32,7 +32,7 @@ const AboutSection = () => {
   }, [reveal]);
 
   return (
-    <section className={cn('about-section')} data-scroll-section>
+    <section className={cn('about-section')} data-scroll-section id="about">
       <SectionHeader title="about" />
       <p ref={ref} id="headline" className={cn({ 'is-reveal': reveal })}>
         Hello! My name is Bogdan Marica and I am web developer, web designer and

@@ -5,7 +5,7 @@ import VideoMobile from './images/ollie-website-mobile-featured.mp4';
 
 const FeaturedSection = () => {
   return (
-    <section className="featured-section" data-scroll-section>
+    <section className="featured-section" data-scroll-section id="featured">
       <div className="featured-row-layout">
         <h6>Mobile</h6>
         <video src={VideoMobile} autoPlay loop muted data-scroll />
