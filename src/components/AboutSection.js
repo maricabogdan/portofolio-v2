@@ -37,10 +37,10 @@ const AboutSection = () => {
       <p ref={ref} id="headline" className={cn({ 'is-reveal': reveal })}>
         Hello! My name is Bogdan Marica and I am web developer, web designer and
         web enthusiast. At the end of 2020, i found a website called CodeAcademy
-        which have an offer for 100,000 students for free 3 months. Even I am
-        study Electrical Engineering at Faculty of Engineering from Craiova, I
-        was curious about programming. At that moment I didn’t have any
-        knowledge about codding. I found a series of courses about Web
+        which had an offer for 100,000 students to be free of charge for 3
+        months. Even I am study Electrical Engineering at Faculty of Engineering
+        from Craiova, I was curious about programming. At that moment I didn’t
+        have any knowledge about codding. I found a series of courses about Web
         Development which have courses about HTML CSS, JavaScript and more.
         After that day, I found my passion. Almost everyday I started learning
         about anything which have web development in common. After 3 mounths I
